@@ -1,0 +1,20 @@
+---
+version: '3.8'
+services:
+  prusaslicer:
+    build: .
+    image: ghcr.io/torresmvl/prusaslicer-docker:latest
+    environment:
+      DISPLAY: ':0'
+    ports:
+      - published: 2222
+        target: 22
+        protocol: tcp
+        mode: host
+      - published: 9001
+        target: 9001
+        protocol: tcp
+        mode: host
+    volumes:
+      - supervisord.conf:/etc/supervisord.conf
+      - ./data:/data

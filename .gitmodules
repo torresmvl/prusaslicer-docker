@@ -1,0 +1,3 @@
+[submodule "virtualgl"]
+	path = virtualgl
+	url = https://github.com/torresmvl/virtualgl.git

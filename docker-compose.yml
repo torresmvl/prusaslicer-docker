@@ -2,7 +2,6 @@
 version: '3.8'
 services:
   prusaslicer:
-    build: .
     image: ghcr.io/torresmvl/prusaslicer-docker:latest
     environment:
       DISPLAY: ':0'
@@ -16,5 +15,6 @@ services:
         protocol: tcp
         mode: host
     volumes:
-      - supervisord.conf:/etc/supervisord.conf
+      - ./supervisord.conf:/etc/supervisord.conf
       - ./data:/data
+      - ./config:/root/.config/PrusaSlicer

@@ -2,7 +2,7 @@
 version: '3.8'
 services:
   prusaslicer:
-    image: ghcr.io/torresmvl/prusaslicer-docker:latest
+    image: ghcr.io/torresmvl/prusaslicer:latest
     runtime: nvidia
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:ro

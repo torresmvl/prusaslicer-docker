@@ -2,4 +2,4 @@ version: '3.8'
 services:
   prusaslicer:
     build: .
-    image: ghcr.io/torresmvl/prusaslicer-docker:latest
+    image: ghcr.io/torresmvl/prusaslicer:latest

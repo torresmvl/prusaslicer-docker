@@ -2,7 +2,7 @@
 version: '3.8'
 services:
   prusaslicer:
-    image: ghcr.io/torresmvl/prusaslicer-docker:latest
+    image: ghcr.io/torresmvl/prusaslicer:latest
     environment:
       DISPLAY: ':0'
     ports:

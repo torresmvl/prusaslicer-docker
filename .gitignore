@@ -1,0 +1,6 @@
+xorg.conf
+*.log
+*sys*
+*.config
+config/*
+data/*

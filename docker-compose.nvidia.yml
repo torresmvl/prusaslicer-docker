@@ -1,10 +1,10 @@
 ---
 version: '3.8'
 services:
-  virtualgl:
+  prusaslicer:
     image: ghcr.io/torresmvl/prusaslicer-docker:latest
     runtime: nvidia
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:ro
       - ./xorg.conf:/etc/X11/xorg.conf:ro
-      - ./Xwrapper.config:/etc/X11/Xwrapper.config:ro
+      # - ./Xwrapper.config:/etc/X11/Xwrapper.config:ro
